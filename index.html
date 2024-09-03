@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Factory Scheduler</h1>
+        
+        <!-- User Management Section -->
+        <section id="user-management">
+            <h2>Manage Users</h2>
+            <form id="user-form">
+                <input type="text" id="user-name" placeholder="Name" required>
+                <input type="text" id="user-role" placeholder="Role" required>
+                <button type="submit">Add User</button>
+            </form>
+            <ul id="user-list"></ul>
+        </section>
+
+        <!-- Shift Management Section -->
+        <!-- Shift Scheduling Section -->
+<section id="shift-scheduling">
+    <h2>Shift Scheduling</h2>
+    <form id="schedule-form">
+        <input type="date" id="schedule-date" required>
+        <input type="number" id="shift-id" placeholder="Shift ID" required>
+        <input type="number" id="worker-id-schedule" placeholder="Worker ID" required>
+        <button type="submit">Add Schedule</button>
+    </form>
+    <ul id="schedule-list"></ul>
+</section>
+
+<!-- Attendance Tracking Section -->
+<section id="attendance-tracking">
+    <h2>Real-Time Attendance</h2>
+    <form id="attendance-form">
+        <input type="number" id="attendance-worker-id" placeholder="Worker ID" required>
+        <button type="button" id="clock-in">Clock In</button>
+        <button type="button" id="clock-out">Clock Out</button>
+    </form>
+    <ul id="attendance-list"></ul>
+</section>
+
+<!-- Performance Metrics Section -->
+<section id="performance-metrics">
+    <h2>Performance Metrics</h2>
+    <form id="performance-form">
+        <input type="number" id="performance-worker-id" placeholder="Worker ID" required>
+        <input type="date" id="performance-date" required>
+        <input type="number" id="hours-worked" placeholder="Hours Worked" required>
+        <input type="number" id="tasks-completed" placeholder="Tasks Completed" required>
+        <button type="submit">Add Performance Metric</button>
+    </form>
+    <ul id="performance-list"></ul>
+</section>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
